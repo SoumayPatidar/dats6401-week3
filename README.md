@@ -1,5 +1,5 @@
 # DATS 6401: Week 3 Homework
-## Tabular & Multivariate Data — Correlation Heatmap & PCA
+## Tabular & Multivariate Data: Correlation Heatmap & PCA
 
 **Author:** Soumay Patidar  
 **Course:** Visualization of Complex Data (DATS 6401)  
