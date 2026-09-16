@@ -91,13 +91,13 @@ numeric_cols = [
     "avg_grid", "avg_finish", "total_laps", "dnf_count",
     "win_rate", "podium_rate",
 ]
-st.markdown("### 📋 Data Preview")
+st.markdown("### Data Preview")
 st.markdown(f"**{len(driver_stats)} drivers** with **{len(numeric_cols)} numeric variables** each.")
 st.dataframe(driver_stats, use_container_width=True, height=250)
 
 st.markdown("---")
 # CORRELATION HEATMAP
-st.markdown("### 🔥 Correlation Heatmap")
+st.markdown("### Correlation Heatmap")
 
 fig1, ax1 = plt.subplots(figsize=(10, 8))
 corr = driver_stats[numeric_cols].corr()
@@ -135,7 +135,7 @@ st.markdown(
 st.markdown("---")
 
 # PCA PROJECTION
-st.markdown("### 🎯 PCA Projection to 2D")
+st.markdown("###PCA Projection to 2D")
 
 st.markdown(
     """
@@ -211,7 +211,7 @@ st.markdown(f"**Explained variance:** PC1 = {var1:.1%}, PC2 = {var2:.1%}, "
             f"together = {var1 + var2:.1%}")
 # SCREE PLOT (bonus)
 st.markdown("---")
-st.markdown("### 📉 Scree Plot (Bonus)")
+st.markdown("### Scree Plot (Bonus)")
 
 pca_full = PCA().fit(X_scaled)
 fig3, ax3 = plt.subplots(figsize=(8, 4))
@@ -228,7 +228,7 @@ plt.tight_layout()
 st.pyplot(fig3)
 # INTERPRETATION
 st.markdown("---")
-st.markdown("### 📝 Interpretation")
+st.markdown("### Interpretation")
 
 st.markdown(
     f"""
