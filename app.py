@@ -97,7 +97,7 @@ st.dataframe(driver_stats, use_container_width=True, height=250)
 
 st.markdown("---")
 # CORRELATION HEATMAP
-st.markdown("### 🔥 Correlation Heatmap")
+st.markdown("### Correlation Heatmap")
 
 fig1, ax1 = plt.subplots(figsize=(10, 8))
 corr = driver_stats[numeric_cols].corr()
@@ -135,7 +135,7 @@ st.markdown(
 st.markdown("---")
 
 # PCA PROJECTION
-st.markdown("### 🎯 PCA Projection to 2D")
+st.markdown("### PCA Projection to 2D")
 
 st.markdown(
     """
@@ -228,7 +228,7 @@ plt.tight_layout()
 st.pyplot(fig3)
 # INTERPRETATION
 st.markdown("---")
-st.markdown("### 📝 Interpretation")
+st.markdown("### Interpretation")
 
 st.markdown(
     f"""
